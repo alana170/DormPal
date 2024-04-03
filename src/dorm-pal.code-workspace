@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../dorm-pal"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "sparlex-1.0.0"
+	}
+}
