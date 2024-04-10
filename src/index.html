@@ -8,6 +8,7 @@
         });
     </script>
     <style>
+           
           .wrapper {
                 position: relative;
                 display: flex;
@@ -46,6 +47,7 @@
                 display: inline-block;
                 margin-top: 10px;
                 margin-bottom: 10px;
+                color: white !important;
             }
 
             .dropdown-content {
@@ -134,33 +136,30 @@
                             <span class="fa fa-bars text-primary"></span>
                         </button>
                         <div class="collapse navbar-collapse bg-light py-3" id="navbarCollapse">
-                            <div class="navbar-nav mx-auto border-top">
+                            <div class="navbar-nav mx-auto border-top" id = "paddingDown">
                                 <a href="index.html" class="nav-item nav-link active">Home</a>
                                 <a href="about.html" class="nav-item nav-link">Account</a>
                                 <a href="service.html" class="nav-item nav-link">Favorites</a>
                                 <a href="price.html" class="nav-item nav-link">Messages</a>
                                 <a href="price.html" class="nav-item nav-link">ChatGPT</a>
-                                <div class="nav-item dropdown">
-                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Settings</a>
-                                    <div class="dropdown-menu m-0 bg-secondary rounded-0">
-                                        <a href="team.html" class="dropdown-item">Privacy Controls</a>
-                                        <a href="contact.html" class="dropdown-item">Contact Us</a>
-                                    </div>
-                                </div>
+                                <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                                <a href="team.html" class="nav-item nav-link">Settings</a>
                             </div>
                         </div>
+                    </div>
                     </nav>
                 </div>
             </div>
         </div>
-        <div style="background-color: white;"> <!-- class="container-fluid sticky-top px-0" -->
-            <div class="container-fluid topbar d-none d-lg-block">
+        <div> <!-- class="container-fluid sticky-top px-0" -->
+            <div class="container-fluid topbar d-none d-lg-block" style="background-color: #ba0c2f !important;">
                 <div class="container px-0" >
-                    <div class="row align-items-center">
+                    <div class="row align-items-center" >
                         <div class="col-lg-8">
                             <div class="d-flex flex-wrap">
+                               
                                 <div class="dropdown">
-                                    <span href="#" style="padding: 13px;" class="me-4 text-light nav-fill">Gender</span>
+                                    <span class="dropdown-toggle"  href="#" style="padding: 13px;" class="me-4 text-light nav-fill">Gender</span>
                                     <div class="dropdown-content">
                                         <a href="#">Male</a>
                                         <a href="#">Female</a>
@@ -168,7 +167,7 @@
                                     </div>
                                 </div>
                                 <div class="dropdown">
-                                    <span href="#" style="padding: 13px;" class="me-4 text-light nav-fill">Major</span>
+                                    <span class="dropdown-toggle" href="#" style="padding: 13px;" class="me-4 text-light nav-fill">Major</span>
                                     <div class="dropdown-content">
                                         <a href="#">Arts and Sciences</a>
                                         <a href="#">Business</a>
@@ -179,7 +178,7 @@
                                     </div>
                                 </div>
                                 <div class="dropdown">
-                                    <span href="#" style="padding: 13px;" class="me-4 text-light  nav-fill">Minor</span>
+                                    <span class="dropdown-toggle" href="#" style="padding: 13px;" class="me-4 text-light  nav-fill">Minor</span>
                                     <div class="dropdown-content">
                                         <a href="#">Arts and Sciences</a>
                                         <a href="#">Business</a>
@@ -190,7 +189,7 @@
                                     </div>
                                 </div>
                                 <div class="dropdown">
-                                    <span href="#" style="padding: 13px;" class="me-4 text-light  nav-fill">LLC</span>
+                                    <span class="dropdown-toggle" href="#" style="padding: 13px;" class="me-4 text-light  nav-fill">LLC</span>
                                     <div class="dropdown-content">
                                         <a href="#">Alumnae Scholarship Housing</a>
                                         <a href="#">Business Honors</a>
@@ -203,7 +202,7 @@
                                     </div>
                                 </div>
                                 <div class="dropdown">
-                                    <span href="#" style="padding: 13px;" class="me-4 text-light nav-fill">Personality Type</span>
+                                    <span class="dropdown-toggle" href="#" style="padding: 13px;" class="me-4 text-light nav-fill">Personality Type</span>
                                     <div class="dropdown-content">
                                         <a href="#">Analysts</a>
                                         <a href="#">Diplomats</a>
@@ -212,7 +211,7 @@
                                     </div>
                                 </div>
                                 <div class="dropdown">
-                                    <span href="#" style="padding: 13px;" class="me-4 text-light nav-fill">Sleep Preferences</span>
+                                    <span class="dropdown-toggle" href="#" style="padding: 13px;" class="me-4 text-light nav-fill">Sleep Preferences</span>
                                     <div class="dropdown-content">
                                         <a href="#">Early Riser</a>
                                         <a href="#">Night Owl</a>
@@ -254,7 +253,6 @@
                                 <div class="col-4">
                                     <div class="services-img d-flex align-items-center justify-content-center rounded">
                                         <img src="img/steven.png" class="img-fluid rounded" alt="">
-                                       
                                     </div>
                                     
                                 </div>
@@ -264,6 +262,8 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="services-item bg-light border-4 border-start border-primary rounded p-4">
+                            <a href="#" class="rounded-pill py-2 px-4"><i class="far fa-heart" id="heart"></i></a>
+
                             <div class="row align-items-center">
                                 <div class="col-4">
                                     <div class="services-img d-flex align-items-center justify-content-center rounded">
@@ -282,6 +282,8 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="services-item bg-light border-4 border-end border-primary rounded p-4">
+                            <a href="#" class="rounded-pill py-2 px-4"><i class="far fa-heart" id="heart"></i></a>
+
                             <div class="row align-items-center">
                                 <div class="col-8">
                                     <div class="services-content text-end">
@@ -300,6 +302,8 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="services-item bg-light border-4 border-start border-primary rounded p-4">
+                            <a href="#" class="rounded-pill py-2 px-4"><i class="far fa-heart" id="heart"></i></a>
+
                             <div class="row align-items-center">
                                 <div class="col-4">
                                     <div class="services-img d-flex align-items-center justify-content-center rounded">
@@ -318,6 +322,8 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="services-item bg-light border-4 border-end border-primary rounded p-4">
+                            <a href="#" class="rounded-pill py-2 px-4"><i class="far fa-heart" id="heart"></i></a>
+
                             <div class="row align-items-center">
                                 <div class="col-8">
                                     <div class="services-content text-end">
@@ -336,6 +342,8 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="services-item bg-light border-4 border-start border-primary rounded p-4">
+                            <a href="#" class="rounded-pill py-2 px-4"><i class="far fa-heart" id="heart"></i></a>
+
                             <div class="row align-items-center">
                                 <div class="col-4">
                                     <div class="services-img d-flex align-items-center justify-content-center rounded">
@@ -354,6 +362,8 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="services-item bg-light border-4 border-end border-primary rounded p-4">
+                            <a href="#" class="rounded-pill py-2 px-4"><i class="far fa-heart" id="heart"></i></a>
+
                             <div class="row align-items-center">
                                 <div class="col-8">
                                     <div class="services-content text-end">
@@ -372,6 +382,8 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="services-item bg-light border-4 border-start border-primary rounded p-4">
+                            <a href="#" class="rounded-pill py-2 px-4"><i class="far fa-heart" id="heart"></i></a>
+
                             <div class="row align-items-center">
                                 <div class="col-4">
                                     <div class="services-img d-flex align-items-center justify-content-center rounded">
